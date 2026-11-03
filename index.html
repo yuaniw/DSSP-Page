@@ -1,520 +1,202 @@
-<!DOCTYPE html>
-<html lang="en">
+<!DOCTYPE html><html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  
-  <!-- Primary Meta Tags -->
-  <!-- TODO: Replace with your paper title and author names -->
-  <meta name="title" content="PAPER_TITLE - AUTHOR_NAMES">
-  <!-- TODO: Write a compelling 150-160 character description of your research -->
-  <meta name="description" content="BRIEF_DESCRIPTION_OF_YOUR_RESEARCH_CONTRIBUTION_AND_FINDINGS">
-  <!-- TODO: Add 5-10 relevant keywords for your research area -->
-  <meta name="keywords" content="KEYWORD1, KEYWORD2, KEYWORD3, machine learning, computer vision, AI">
-  <!-- TODO: List all authors -->
-  <meta name="author" content="FIRST_AUTHOR_NAME, SECOND_AUTHOR_NAME">
-  <meta name="robots" content="index, follow">
-  <meta name="language" content="English">
-  
-  <!-- Open Graph / Facebook -->
-  <meta property="og:type" content="article">
-  <!-- TODO: Replace with your institution or lab name -->
-  <meta property="og:site_name" content="INSTITUTION_OR_LAB_NAME">
-  <!-- TODO: Same as paper title above -->
-  <meta property="og:title" content="PAPER_TITLE">
-  <!-- TODO: Same as description above -->
-  <meta property="og:description" content="BRIEF_DESCRIPTION_OF_YOUR_RESEARCH_CONTRIBUTION_AND_FINDINGS">
-  <!-- TODO: Replace with your actual website URL -->
-  <meta property="og:url" content="https://YOUR_DOMAIN.com/YOUR_PROJECT_PAGE">
-  <!-- TODO: Create a 1200x630px preview image and update path -->
-  <meta property="og:image" content="https://YOUR_DOMAIN.com/static/images/social_preview.png">
-  <meta property="og:image:width" content="1200">
-  <meta property="og:image:height" content="630">
-  <meta property="og:image:alt" content="PAPER_TITLE - Research Preview">
-  <meta property="article:published_time" content="2024-01-01T00:00:00.000Z">
-  <meta property="article:author" content="FIRST_AUTHOR_NAME">
-  <meta property="article:section" content="Research">
-  <meta property="article:tag" content="KEYWORD1">
-  <meta property="article:tag" content="KEYWORD2">
-
-  <!-- Twitter -->
-  <meta name="twitter:card" content="summary_large_image">
-  <!-- TODO: Replace with your lab/institution Twitter handle -->
-  <meta name="twitter:site" content="@YOUR_TWITTER_HANDLE">
-  <!-- TODO: Replace with first author's Twitter handle -->
-  <meta name="twitter:creator" content="@AUTHOR_TWITTER_HANDLE">
-  <!-- TODO: Same as paper title above -->
-  <meta name="twitter:title" content="PAPER_TITLE">
-  <!-- TODO: Same as description above -->
-  <meta name="twitter:description" content="BRIEF_DESCRIPTION_OF_YOUR_RESEARCH_CONTRIBUTION_AND_FINDINGS">
-  <!-- TODO: Same as social preview image above -->
-  <meta name="twitter:image" content="https://YOUR_DOMAIN.com/static/images/social_preview.png">
-  <meta name="twitter:image:alt" content="PAPER_TITLE - Research Preview">
-
-  <!-- Academic/Research Specific -->
-  <meta name="citation_title" content="PAPER_TITLE">
-  <meta name="citation_author" content="FIRST_AUTHOR_LAST, FIRST_AUTHOR_FIRST">
-  <meta name="citation_author" content="SECOND_AUTHOR_LAST, SECOND_AUTHOR_FIRST">
-  <meta name="citation_publication_date" content="2024">
-  <meta name="citation_conference_title" content="CONFERENCE_NAME">
-  <meta name="citation_pdf_url" content="https://YOUR_DOMAIN.com/static/pdfs/paper.pdf">
-  
-  <!-- Additional SEO -->
-  <meta name="theme-color" content="#2563eb">
-  <meta name="msapplication-TileColor" content="#2563eb">
-  <meta name="apple-mobile-web-app-capable" content="yes">
-  <meta name="apple-mobile-web-app-status-bar-style" content="default">
-  
-  <!-- Preconnect for performance -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="preconnect" href="https://ajax.googleapis.com">
-  <link rel="preconnect" href="https://documentcloud.adobe.com">
-  <link rel="preconnect" href="https://cdn.jsdelivr.net">
-
-
-  <!-- TODO: Replace with your paper title and authors -->
-  <title>PAPER_TITLE - AUTHOR_NAMES | Academic Research</title>
-  
-  <!-- Favicon and App Icons -->
-  <link rel="icon" type="image/x-icon" href="static/images/favicon.ico">
-  <link rel="apple-touch-icon" href="static/images/favicon.ico">
-  
-  <!-- Critical CSS - Load synchronously -->
-  <link rel="stylesheet" href="static/css/bulma.min.css">
-  <link rel="stylesheet" href="static/css/index.css">
-  
-  <!-- Non-critical CSS - Load asynchronously -->
-  <link rel="preload" href="static/css/bulma-carousel.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
-  <link rel="preload" href="static/css/bulma-slider.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
-  <link rel="preload" href="static/css/fontawesome.all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
-  <link rel="preload" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
-  
-  <!-- Fallback for browsers that don't support preload -->
-  <noscript>
-    <link rel="stylesheet" href="static/css/bulma-carousel.min.css">
-    <link rel="stylesheet" href="static/css/bulma-slider.min.css">
-    <link rel="stylesheet" href="static/css/fontawesome.all.min.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
-  </noscript>
-  
-  <!-- Fonts - Optimized loading -->
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-  
-  <!-- Defer non-critical JavaScript -->
-  <script defer src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-  <script defer src="https://documentcloud.adobe.com/view-sdk/main.js"></script>
-  <script defer src="static/js/fontawesome.all.min.js"></script>
-  <script defer src="static/js/bulma-carousel.min.js"></script>
-  <script defer src="static/js/bulma-slider.min.js"></script>
-  <script defer src="static/js/index.js"></script>
-  
-  <!-- Structured Data for Academic Papers -->
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "ScholarlyArticle",
-    "headline": "PAPER_TITLE",
-    "description": "BRIEF_DESCRIPTION_OF_YOUR_RESEARCH_CONTRIBUTION_AND_FINDINGS",
-    "author": [
-      {
-        "@type": "Person",
-        "name": "FIRST_AUTHOR_NAME",
-        "affiliation": {
-          "@type": "Organization",
-          "name": "INSTITUTION_NAME"
-        }
-      },
-      {
-        "@type": "Person",
-        "name": "SECOND_AUTHOR_NAME",
-        "affiliation": {
-          "@type": "Organization",
-          "name": "INSTITUTION_NAME"
-        }
-      }
-    ],
-    "datePublished": "2024-01-01",
-    "publisher": {
-      "@type": "Organization",
-      "name": "CONFERENCE_OR_JOURNAL_NAME"
-    },
-    "url": "https://YOUR_DOMAIN.com/YOUR_PROJECT_PAGE",
-    "image": "https://YOUR_DOMAIN.com/static/images/social_preview.png",
-    "keywords": ["KEYWORD1", "KEYWORD2", "KEYWORD3", "machine learning", "computer vision"],
-    "abstract": "FULL_ABSTRACT_TEXT_HERE",
-    "citation": "BIBTEX_CITATION_HERE",
-    "isAccessibleForFree": true,
-    "license": "https://creativecommons.org/licenses/by/4.0/",
-    "mainEntity": {
-      "@type": "WebPage",
-      "@id": "https://YOUR_DOMAIN.com/YOUR_PROJECT_PAGE"
-    },
-    "about": [
-      {
-        "@type": "Thing",
-        "name": "RESEARCH_AREA_1"
-      },
-      {
-        "@type": "Thing", 
-        "name": "RESEARCH_AREA_2"
-      }
-    ]
-  }
-  </script>
-  
-  <!-- Website/Organization Structured Data -->
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "Organization",
-    "name": "INSTITUTION_OR_LAB_NAME",
-    "url": "https://YOUR_INSTITUTION_WEBSITE.com",
-    "logo": "https://YOUR_DOMAIN.com/static/images/favicon.ico",
-    "sameAs": [
-      "https://twitter.com/YOUR_TWITTER_HANDLE",
-      "https://github.com/YOUR_GITHUB_USERNAME"
-    ]
-  }
-  </script>
-</head>
-<body>
-
-
-  <!-- Scroll to Top Button -->
-  <button class="scroll-to-top" onclick="scrollToTop()" title="Scroll to top" aria-label="Scroll to top">
-    <i class="fas fa-chevron-up"></i>
-  </button>
-
-  <!-- More Works Dropdown -->
-  <div class="more-works-container">
-    <button class="more-works-btn" onclick="toggleMoreWorks()" title="View More Works from Our Lab">
-      <i class="fas fa-flask"></i>
-      More Works
-      <i class="fas fa-chevron-down dropdown-arrow"></i>
-    </button>
-    <div class="more-works-dropdown" id="moreWorksDropdown">
-      <div class="dropdown-header">
-        <h4>More Works from Our Lab</h4>
-        <button class="close-btn" onclick="toggleMoreWorks()">
-          <i class="fas fa-times"></i>
-        </button>
-      </div>
-      <div class="works-list">
-        <!-- TODO: Replace with your lab's related works -->
-        <a href="https://arxiv.org/abs/PAPER_ID_1" class="work-item" target="_blank">
-          <div class="work-info">
-            <!-- TODO: Replace with actual paper title -->
-            <h5>Paper Title 1</h5>
-            <!-- TODO: Replace with brief description -->
-            <p>Brief description of the work and its main contribution.</p>
-            <!-- TODO: Replace with venue and year -->
-            <span class="work-venue">Conference/Journal 2024</span>
-          </div>
-          <i class="fas fa-external-link-alt"></i>
-        </a>
-        <!-- TODO: Add more related works or remove extra items -->
-        <a href="https://arxiv.org/abs/PAPER_ID_2" class="work-item" target="_blank">
-          <div class="work-info">
-            <h5>Paper Title 2</h5>
-            <p>Brief description of the work and its main contribution.</p>
-            <span class="work-venue">Conference/Journal 2023</span>
-          </div>
-          <i class="fas fa-external-link-alt"></i>
-        </a>
-        <a href="https://arxiv.org/abs/PAPER_ID_3" class="work-item" target="_blank">
-          <div class="work-info">
-            <h5>Paper Title 3</h5>
-            <p>Brief description of the work and its main contribution.</p>
-            <span class="work-venue">Conference/Journal 2023</span>
-          </div>
-          <i class="fas fa-external-link-alt"></i>
-        </a>
-      </div>
-    </div>
-  </div>
-
-  <main id="main-content">
-  <section class="hero">
-    <div class="hero-body">
-      <div class="container is-max-desktop">
-        <div class="columns is-centered">
-          <div class="column has-text-centered">
-            <!-- TODO: Replace with your paper title -->
-            <h1 class="title is-1 publication-title">Academic Project Page</h1>
-            <div class="is-size-5 publication-authors">
-              <!-- TODO: Replace with your paper authors and their personal links -->
-              <span class="author-block">
-                <a href="FIRST AUTHOR PERSONAL LINK" target="_blank">First Author</a><sup>*</sup>,</span>
-                <span class="author-block">
-                  <a href="SECOND AUTHOR PERSONAL LINK" target="_blank">Second Author</a><sup>*</sup>,</span>
-                  <span class="author-block">
-                    <a href="THIRD AUTHOR PERSONAL LINK" target="_blank">Third Author</a>
-                  </span>
-                  </div>
-
-                  <div class="is-size-5 publication-authors">
-                    <!-- TODO: Replace with your institution and conference/journal info -->
-                    <span class="author-block">Institution Name<br>Conference name and year</span>
-                    <!-- TODO: Remove this line if no equal contribution -->
-                    <span class="eql-cntrb"><small><br><sup>*</sup>Indicates Equal Contribution</small></span>
-                  </div>
-
-                  <div class="column has-text-centered">
-                    <div class="publication-links">
-                         <!-- TODO: Update with your arXiv paper ID -->
-                      <span class="link-block">
-                        <a href="https://arxiv.org/pdf/<ARXIV PAPER ID>.pdf" target="_blank"
-                        class="external-link button is-normal is-rounded is-dark">
-                        <span class="icon">
-                          <i class="fas fa-file-pdf"></i>
-                        </span>
-                        <span>Paper</span>
-                      </a>
-                    </span>
-
-                    <!-- TODO: Add your supplementary material PDF or remove this section -->
-                    <span class="link-block">
-                      <a href="static/pdfs/supplementary_material.pdf" target="_blank"
-                      class="external-link button is-normal is-rounded is-dark">
-                      <span class="icon">
-                        <i class="fas fa-file-pdf"></i>
-                      </span>
-                      <span>Supplementary</span>
-                    </a>
-                  </span>
-
-                  <!-- TODO: Replace with your GitHub repository URL -->
-                  <span class="link-block">
-                    <a href="https://github.com/YOUR REPO HERE" target="_blank"
-                    class="external-link button is-normal is-rounded is-dark">
-                    <span class="icon">
-                      <i class="fab fa-github"></i>
-                    </span>
-                    <span>Code</span>
-                  </a>
-                </span>
-
-                <!-- TODO: Update with your arXiv paper ID -->
-                <span class="link-block">
-                  <a href="https://arxiv.org/abs/<ARXIV PAPER ID>" target="_blank"
-                  class="external-link button is-normal is-rounded is-dark">
-                  <span class="icon">
-                    <i class="ai ai-arxiv"></i>
-                  </span>
-                  <span>arXiv</span>
-                </a>
-              </span>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-
-<!-- Teaser video-->
-<section class="hero teaser">
-  <div class="container is-max-desktop">
-    <div class="hero-body">
-      <!-- TODO: Replace with your teaser video -->
-      <video poster="" id="tree" autoplay controls muted loop height="100%" preload="metadata">
-        <!-- TODO: Add your video file path here -->
-        <source src="static/videos/banner_video.mp4" type="video/mp4">
-      </video>
-      <!-- TODO: Replace with your video description -->
-      <h2 class="subtitle has-text-centered">
-        Aliquam vitae elit ullamcorper tellus egestas pellentesque. Ut lacus tellus, maximus vel lectus at, placerat pretium mi. Maecenas dignissim tincidunt vestibulum. Sed consequat hendrerit nisl ut maximus. 
-      </h2>
-    </div>
-  </div>
-</section>
-<!-- End teaser video -->
-
-<!-- Paper abstract -->
-<section class="section hero is-light">
-  <div class="container is-max-desktop">
-    <div class="columns is-centered has-text-centered">
-      <div class="column is-four-fifths">
-        <h2 class="title is-3">Abstract</h2>
-        <div class="content has-text-justified">
-          <!-- TODO: Replace with your paper abstract -->
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ullamcorper tellus sed ante aliquam tempus. Etiam porttitor urna feugiat nibh elementum, et tempor dolor mattis. Donec accumsan enim augue, a vulputate nisi sodales sit amet. Proin bibendum ex eget mauris cursus euismod nec et nibh. Maecenas ac gravida ante, nec cursus dui. Vivamus purus nibh, placerat ac purus eget, sagittis vestibulum metus. Sed vestibulum bibendum lectus gravida commodo. Pellentesque auctor leo vitae sagittis suscipit.
-          </p>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-<!-- End paper abstract -->
-
-
-<!-- Image carousel -->
-<section class="hero is-small">
-  <div class="hero-body">
-    <div class="container">
-      <div id="results-carousel" class="carousel results-carousel">
-       <div class="item">
-        <!-- TODO: Replace with your research result images -->
-        <img src="static/images/carousel1.jpg" alt="First research result visualization" loading="lazy"/>
-        <!-- TODO: Replace with description of this result -->
-        <h2 class="subtitle has-text-centered">
-          First image description.
-        </h2>
-      </div>
-      <div class="item">
-        <!-- Your image here -->
-        <img src="static/images/carousel2.jpg" alt="Second research result visualization" loading="lazy"/>
-        <h2 class="subtitle has-text-centered">
-          Second image description.
-        </h2>
-      </div>
-      <div class="item">
-        <!-- Your image here -->
-        <img src="static/images/carousel3.jpg" alt="Third research result visualization" loading="lazy"/>
-        <h2 class="subtitle has-text-centered">
-         Third image description.
-       </h2>
-     </div>
-     <div class="item">
-      <!-- Your image here -->
-      <img src="static/images/carousel4.jpg" alt="Fourth research result visualization" loading="lazy"/>
-      <h2 class="subtitle has-text-centered">
-        Fourth image description.
-      </h2>
-    </div>
-  </div>
-</div>
-</div>
-</section>
-<!-- End image carousel -->
-
-
-
-
-<!-- Youtube video -->
-<section class="hero is-small is-light">
-  <div class="hero-body">
-    <div class="container">
-      <!-- Paper video. -->
-      <h2 class="title is-3">Video Presentation</h2>
-      <div class="columns is-centered has-text-centered">
-        <div class="column is-four-fifths">
-          
-          <div class="publication-video">
-            <!-- TODO: Replace with your YouTube video ID -->
-            <iframe src="https://www.youtube.com/embed/JkaxUblCGz0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-<!-- End youtube video -->
-
-
-<!-- Video carousel -->
-<section class="hero is-small">
-  <div class="hero-body">
-    <div class="container">
-      <h2 class="title is-3">Another Carousel</h2>
-      <div id="results-carousel" class="carousel results-carousel">
-        <div class="item item-video1">
-          <!-- TODO: Add poster image for better preview -->
-          <video poster="" id="video1" controls muted loop height="100%" preload="metadata">
-            <!-- Your video file here -->
-            <source src="static/videos/carousel1.mp4" type="video/mp4">
-          </video>
-        </div>
-        <div class="item item-video2">
-          <!-- TODO: Add poster image for better preview -->
-          <video poster="" id="video2" controls muted loop height="100%" preload="metadata">
-            <!-- Your video file here -->
-            <source src="static/videos/carousel2.mp4" type="video/mp4">
-          </video>
-        </div>
-        <div class="item item-video3">
-          <!-- TODO: Add poster image for better preview -->
-          <video poster="" id="video3" controls muted loop height="100%" preload="metadata">
-            <!-- Your video file here -->
-            <source src="static/videos/carousel3.mp4" type="video/mp4">
-          </video>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-<!-- End video carousel -->
-
-
-
-
-
-
-<!-- Paper poster -->
-<section class="hero is-small is-light">
-  <div class="hero-body">
-    <div class="container">
-      <h2 class="title">Poster</h2>
-
-      <!-- TODO: Replace with your poster PDF -->
-      <iframe  src="static/pdfs/sample.pdf" width="100%" height="550">
-          </iframe>
-        
-      </div>
-    </div>
-  </section>
-<!--End paper poster -->
-
-
-
-<!--BibTex citation -->
-  <section class="section" id="BibTeX">
-    <div class="container is-max-desktop content">
-      <div class="bibtex-header">
-        <h2 class="title">BibTeX</h2>
-        <button class="copy-bibtex-btn" onclick="copyBibTeX()" title="Copy BibTeX to clipboard">
-          <i class="fas fa-copy"></i>
-          <span class="copy-text">Copy</span>
-        </button>
-      </div>
-      <pre id="bibtex-code"><code>@article{YourPaperKey2024,
-  title={Your Paper Title Here},
-  author={First Author and Second Author and Third Author},
-  journal={Conference/Journal Name},
-  year={2024},
-  url={https://your-domain.com/your-project-page}
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1"><title>DSSP: Diffusion State Space Policy with Full-History Encoding</title>
+<meta name="description" content="DSSP combines full-history state-space encoding and diffusion action generation for memory-dependent robot manipulation.">
+<meta name="theme-color" content="#2554b8">
+<meta property="og:title" content="DSSP: Diffusion State Space Policy with Full-History Encoding">
+<meta property="og:description" content="Full-history memory for long-horizon robot manipulation.">
+<meta property="og:type" content="article">
+<meta name="citation_title" content="DSSP: Diffusion State Space Policy with Full-History Encoding">
+<meta name="citation_author" content="Guan, Zhiyuan">
+<meta name="citation_author" content="Hu, Jianshu">
+<meta name="citation_author" content="Fang, Han">
+<meta name="citation_author" content="Jiang, Yunpeng">
+<meta name="citation_author" content="Huang, Yize">
+<meta name="citation_author" content="Li, Shujia">
+<meta name="citation_author" content="Li, Xiao">
+<meta name="citation_author" content="Ban, Yutong">
+<meta name="citation_publication_date" content="2026">
+<meta name="citation_conference_title" content="Advances in Neural Information Processing Systems (NeurIPS 2026)">
+<meta name="citation_pdf_url" content="https://arxiv.org/pdf/2605.14598">
+<meta name="citation_arxiv_id" content="2605.14598">
+<link rel="icon" href="static/images/dssp-favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="static/css/bulma.min.css">
+<link rel="stylesheet" href="static/css/index.css">
+<script defer src="static/js/index.js"></script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "ScholarlyArticle", "headline": "DSSP: Diffusion State Space Policy with Full-History Encoding", "author": [{"@type": "Person", "name": "Zhiyuan Guan"}, {"@type": "Person", "name": "Jianshu Hu", "url": "https://jianshu-hu.github.io/"}, {"@type": "Person", "name": "Han Fang"}, {"@type": "Person", "name": "Yunpeng Jiang", "url": "https://jyp9961.github.io/jyp.github.io/"}, {"@type": "Person", "name": "Yize Huang"}, {"@type": "Person", "name": "Shujia Li"}, {"@type": "Person", "name": "Xiao Li", "url": "https://xli4217.github.io/"}, {"@type": "Person", "name": "Yutong Ban", "url": "https://banyutong.github.io/sirius_lab_website/people.html"}], "datePublished": "2026", "url": "https://arxiv.org/abs/2605.14598", "isPartOf": {"@type": "CreativeWork", "name": "Advances in Neural Information Processing Systems (NeurIPS 2026)"}}</script></head>
+<body><a class="skip-link" href="#main-content">Skip to content</a>
+<header class="site-header">
+<nav class="site-nav" aria-label="Main navigation"><a class="brand" href="#top"><span class="brand-mark">D</span>DSSP<span class="brand-detail">RESEARCH</span></a>
+<div class="nav-links"><a href="#overview">Overview</a><a href="#method">Method</a><a href="#results">Results</a><a href="#demo">Demo</a><a href="#bibtex">Cite</a></div><a class="nav-paper" href="https://arxiv.org/abs/2605.14598" target="_blank" rel="noopener noreferrer">Read paper ↗</a></nav></header>
+<main id="main-content">
+<section class="hero publication-header" id="top">
+<div class="hero-body container is-max-desktop has-text-centered">
+<div class="eyebrow"><span class="status-dot"></span> ROBOT LEARNING · NeurIPS 2026</div>
+<h1 class="publication-title"><span class="paper-acronym">DSSP</span><span class="paper-title-text">Diffusion State Space Policy<br class="desktop-break"> with Full-History Encoding</span></h1>
+<p class="hero-summary">Remember the past. Act on what matters.</p>
+<div class="publication-authors"><span>Zhiyuan Guan<sup>1</sup></span><span><a href="https://jianshu-hu.github.io/" target="_blank" rel="noopener noreferrer" aria-label="Jianshu Hu personal homepage (opens in a new tab)">Jianshu Hu</a><sup>1</sup></span><span>Han Fang<sup>1</sup></span><span><a href="https://jyp9961.github.io/jyp.github.io/" target="_blank" rel="noopener noreferrer" aria-label="Yunpeng Jiang personal homepage (opens in a new tab)">Yunpeng Jiang</a><sup>1</sup></span><span>Yize Huang<sup>2</sup></span><span>Shujia Li<sup>1</sup></span><span><a href="https://xli4217.github.io/" target="_blank" rel="noopener noreferrer" aria-label="Xiao Li personal homepage (opens in a new tab)">Xiao Li</a><sup>2</sup></span><span><a href="https://banyutong.github.io/sirius_lab_website/people.html" target="_blank" rel="noopener noreferrer" aria-label="Yutong Ban lab profile (opens in a new tab)">Yutong Ban</a><sup>1,*</sup></span></div>
+<div class="affiliations">
+<p><sup>1</sup>Global College, Shanghai Jiao Tong University</p>
+<p><sup>2</sup>School of Mechanical Engineering, Shanghai Jiao Tong University</p></div>
+<p class="correspondence"><sup>*</sup>Corresponding author: <a href="mailto:yban@sjtu.edu.cn">Yutong Ban</a></p>
+<div class="publication-links"><a class="resource-button primary" href="https://arxiv.org/pdf/2605.14598" target="_blank" rel="noopener noreferrer">Paper ↗</a><a class="resource-button" href="https://arxiv.org/abs/2605.14598" target="_blank" rel="noopener noreferrer">arXiv</a><a class="resource-button" href="#demo">▷ Watch demo</a><a class="resource-button" href="static/pdfs/dssp.pdf" target="_blank" rel="noopener noreferrer">↓ Manuscript</a></div></div></section>
+<section class="teaser-section" id="overview">
+<div class="page-container">
+<div class="section-intro">
+<p class="section-kicker">THE IDEA</p>
+<h2>Similar observations. Different histories.<br>Different actions.</h2>
+<p>When the scene looks the same, task progress still matters. DSSP turns the observation stream into compact memory for action generation.</p></div>
+<figure class="figure-card"><a href="static/images/dssp-teaser.png" target="_blank" rel="noopener noreferrer" aria-label="Open full-resolution teaser"><img width="1880" height="930" src="static/images/dssp-teaser.jpg" alt="DSSP uses full-history encoding to track completed taps in Morse Tapping while DP3 stops prematurely." fetchpriority="high"></a>
+<figcaption><span class="figure-label">AT A GLANCE</span>Full-history context helps resolve visual aliasing and track completed actions. In Morse Tapping, DSSP uses prior interactions to complete the three-tap sequence.<span class="figure-hint">Select the figure to enlarge ↗</span></figcaption></figure>
+<div class="stats-grid">
+<div class="stat"><span class="stat-label">ROBOTWIN 2.0</span><strong>62.30<span>%</span></strong>
+<p>Average success across 50 tasks</p><a href="#results">Manuscript · Table 1 ↗</a></div>
+<div class="stat"><span class="stat-label">REAL-WORLD TASKS</span><strong>70<span>%</span></strong>
+<p>Mean success across three tasks</p><a href="#results" data-result-target="realworld">From 30% with DP3 ↗</a></div>
+<div class="stat"><span class="stat-label">MODEL SIZE</span><strong>44.3<span>M</span></strong>
+<p>Parameters on RoboTwin 2.0</p><a href="#results">Smallest model in Table 1 ↗</a></div></div></div></section>
+<section class="section abstract-section" id="abstract">
+<div class="reading-container">
+<p class="section-kicker">ABSTRACT</p>
+<h2>Full history, compact context.</h2>
+<p class="abstract-text">Diffusion-based imitation learning has shown strong promise for robot manipulation. However, most existing policies condition only on the current observation or a short window of recent observations, limiting their ability to resolve history-dependent ambiguities in long-horizon tasks. To address this, we introduce DSSP, a history-conditioned Diffusion State Space Policy that enables efficient, full-history conditioning for robot manipulation. Leveraging the continuous sequence modeling properties of State Space Models (SSMs), our history encoder effectively compresses the entire observation stream into a compact context representation. To ensure this context preserves critical information regarding future state evolution, the encoder is optimized with a dynamics-aware auxiliary training objective. This high-level context representation is then seamlessly fused with recent state observations to form a hierarchical conditioning mechanism for action generation. Furthermore, to maintain architectural consistency and minimize GPU memory overhead, we also instantiate the diffusion backbone itself using an SSM. Extensive experiments across simulation benchmarks and real-world manipulation tasks show that DSSP achieves state-of-the-art performance with a significantly smaller model size, demonstrating superior efficiency of the hierarchical conditioning in capturing crucial information as the history length increases.</p></div></section>
+<section class="section" id="method">
+<div class="page-container">
+<div class="section-intro">
+<p class="section-kicker">METHOD</p>
+<h2>One memory. Two levels of context.</h2>
+<p>A state-space history encoder and a state-space diffusion policy connect long-term task progress with recent control cues.</p></div>
+<figure class="figure-card"><a href="static/images/dssp-method.png" target="_blank" rel="noopener noreferrer" aria-label="Open full-resolution method"><img width="2400" height="1293" src="static/images/dssp-method.png" alt="DSSP architecture with causal history encoding, dynamics-aware context learning, and hierarchical action denoising." loading="lazy"></a>
+<figcaption><span class="figure-label">ARCHITECTURE</span>The context token and recent state tokens form a hierarchical prefix for action denoising. Diffusion timestep information is injected separately through AdaLN.<span class="figure-hint">Select the figure to enlarge ↗</span></figcaption></figure>
+<div class="method-steps">
+<article><span class="step-number">01</span>
+<h3>Encode the full history</h3>
+<p>A causal Mamba encoder recurrently compresses incoming visual and proprioceptive observations into a compact context token.</p></article>
+<article><span class="step-number">02</span>
+<h3>Learn what to remember</h3>
+<p>A dynamics-aware auxiliary objective trains the context to predict the next state under the executed action, preserving cues useful for future decisions.</p></article>
+<article><span class="step-number">03</span>
+<h3>Generate actions in context</h3>
+<p>A state-space diffusion denoiser combines long-term context with recent observations. Separate timestep modulation keeps task conditioning stable.</p></article></div></div></section>
+<section class="section results-section" id="results">
+<div class="page-container">
+<div class="section-intro">
+<p class="section-kicker">EXPERIMENTS</p>
+<h2>Memory makes a measurable difference.</h2>
+<p>Evaluation spans 87 simulation tasks across RoboTwin 2.0, MetaWorld, and Adroit, alongside three memory-dependent real-world tasks.</p></div>
+<div class="result-tabs" role="tablist" aria-label="Experimental results">
+<button id="tab-robotwin" role="tab" aria-controls="panel-robotwin" aria-selected="true" tabindex="0" data-tab="robotwin">RoboTwin 2.0</button>
+<button id="tab-realworld" role="tab" aria-controls="panel-realworld" aria-selected="false" tabindex="-1" data-tab="realworld">Real world</button>
+<button id="tab-history" role="tab" aria-controls="panel-history" aria-selected="false" tabindex="-1" data-tab="history">History &amp; ablation</button></div>
+<div class="result-panel" id="panel-robotwin" role="tabpanel" aria-labelledby="tab-robotwin" tabindex="0">
+<div class="panel-heading">
+<div>
+<h3>50 bimanual manipulation tasks</h3>
+<p>Success rate (%) ↑ · Model parameters ↓</p></div><span class="table-source">MANUSCRIPT · TABLE 1</span></div>
+<div class="table-scroll" tabindex="0" role="region" aria-label="RoboTwin 2.0 benchmark">
+<table class="results-table"><caption>RoboTwin 2.0 benchmark</caption>
+<thead>
+<tr><th scope="col">Method</th><th scope="col">Observation</th><th scope="col">Short (18)</th><th scope="col">Mid (15)</th><th scope="col">Long (17)</th><th scope="col">Average</th><th scope="col">Parameters</th></tr></thead>
+<tbody>
+<tr><th scope="row">ACT</th><td>RGB</td><td>29.94</td><td>26.40</td><td>32.47</td><td>29.74</td><td>80.0M</td></tr>
+<tr><th scope="row">DP</th><td>RGB</td><td>31.28</td><td>26.00</td><td>26.41</td><td>28.04</td><td>96.8M</td></tr>
+<tr><th scope="row">π₀</th><td>RGB</td><td>44.56</td><td>44.07</td><td>50.47</td><td>46.42</td><td>3.3B</td></tr>
+<tr><th scope="row">RDT</th><td>RGB</td><td>36.72</td><td>32.47</td><td>33.94</td><td>34.50</td><td>1.2B</td></tr>
+<tr><th scope="row">SeedPolicy</th><td>RGB</td><td>43.39</td><td>36.53</td><td>47.59</td><td>42.76</td><td>147.3M</td></tr>
+<tr><th scope="row">DP3</th><td>Point cloud</td><td>59.83</td><td>52.53</td><td>52.76</td><td>55.24</td><td>264.4M</td></tr>
+<tr><th scope="row">FlowPolicy</th><td>Point cloud</td><td>54.89</td><td>37.40</td><td>29.59</td><td>41.04</td><td>264.4M</td></tr>
+<tr><th scope="row">MambaPolicy</th><td>Point cloud</td><td>61.67</td><td>56.27</td><td>58.88</td><td>59.10</td><td>47.9M</td></tr>
+<tr><th scope="row">Diff-Control</th><td>Point cloud</td><td>64.00</td><td>54.67</td><td>58.82</td><td>59.44</td><td>264.4M</td></tr>
+<tr><th scope="row">MTIL</th><td>Point cloud</td><td>66.22</td><td>54.73</td><td>56.18</td><td>59.36</td><td>60.5M</td></tr>
+<tr><th scope="row">CycleManip</th><td>Point cloud</td><td>57.78</td><td>49.27</td><td>54.47</td><td>54.10</td><td>279.2M</td></tr>
+<tr class="ours"><th scope="row">DSSP (ours)</th><td>Point cloud</td><td>64.78</td><td>57.33</td><td>64.06</td><td>62.30</td><td>44.3M</td></tr></tbody></table></div>
+<p class="result-note">100 test episodes per task under the in-distribution demo_clean setting. Observation modalities differ across methods; values follow Table 1 of the manuscript.</p></div>
+<div class="result-panel" id="panel-realworld" role="tabpanel" aria-labelledby="tab-realworld" tabindex="0" hidden>
+<div class="panel-heading">
+<div>
+<h3>Real-world task progress tracking</h3>
+<p>Success rate (%) ↑ · 20 trials per method per task</p></div><span class="table-source">MANUSCRIPT · TABLE 6</span></div>
+<div class="chart-legend"><span><i class="legend-dot baseline"></i>DP3</span><span><i class="legend-dot dssp"></i>DSSP</span></div>
+<div class="realworld-chart">
+<div class="task-result"><h4>Put Bottles</h4>
+<div class="bar-line"><span>DP3</span>
+<div class="bar-track">
+<div class="bar baseline" style="width:40%"></div></div><strong>40%</strong></div>
+<div class="bar-line"><span>DSSP</span>
+<div class="bar-track">
+<div class="bar dssp" style="width:60%"></div></div><strong>60%</strong></div></div>
+<div class="task-result"><h4>Object Swap</h4>
+<div class="bar-line"><span>DP3</span>
+<div class="bar-track">
+<div class="bar baseline" style="width:35%"></div></div><strong>35%</strong></div>
+<div class="bar-line"><span>DSSP</span>
+<div class="bar-track">
+<div class="bar dssp" style="width:65%"></div></div><strong>65%</strong></div></div>
+<div class="task-result"><h4>Morse Tapping</h4>
+<div class="bar-line"><span>DP3</span>
+<div class="bar-track">
+<div class="bar baseline" style="width:15%"></div></div><strong>15%</strong></div>
+<div class="bar-line"><span>DSSP</span>
+<div class="bar-track">
+<div class="bar dssp" style="width:85%"></div></div><strong>85%</strong></div></div></div>
+<p class="result-note">Three tasks on an AgileX platform with fixed-camera point-cloud observations. Mean success is 30% for DP3 and 70% for DSSP, an increase of 40 percentage points. The chart shows the DP3 comparison; the manuscript also reports FlowPolicy and MP1.</p></div>
+<div class="result-panel" id="panel-history" role="tabpanel" aria-labelledby="tab-history" tabindex="0" hidden>
+<div class="panel-heading">
+<div>
+<h3>Effective history, efficient encoding</h3>
+<p>Six history-sensitive RoboTwin tasks</p></div><span class="table-source">MANUSCRIPT · TABLES 3 &amp; 5</span></div>
+<div class="table-scroll" tabindex="0" role="region" aria-label="Full-history encoder comparison · Table 3">
+<table class="results-table"><caption>Full-history encoder comparison · Table 3</caption>
+<thead>
+<tr><th scope="col">History encoder</th><th scope="col">Success (%) ↑</th><th scope="col">Encoding p95 ↓</th><th scope="col">Peak GPU memory ↓</th></tr></thead>
+<tbody>
+<tr><th scope="row">Transformer</th><td>66.00</td><td>3.61 ms</td><td>586.2 MB</td></tr>
+<tr class="ours"><th scope="row">Mamba (DSSP)</th><td>71.33</td><td>1.97 ms</td><td>238.5 MB</td></tr></tbody></table></div>
+<div class="table-scroll" tabindex="0" role="region" aria-label="Component ablation · Table 5">
+<table class="results-table"><caption>Component ablation · Table 5</caption>
+<thead>
+<tr><th scope="col">Variant</th><th scope="col">Success rate (%) ↑</th></tr></thead>
+<tbody>
+<tr><th scope="row">DP3 baseline</th><td>58.67</td></tr>
+<tr><th scope="row">Without history encoder</th><td>64.33</td></tr>
+<tr><th scope="row">Without timestep-decoupled denoising</th><td>66.67</td></tr>
+<tr><th scope="row">Without recent-state conditioning</th><td>68.17</td></tr>
+<tr><th scope="row">Without dynamics-aware objective</th><td>69.50</td></tr>
+<tr><th scope="row">With Transformer denoiser</th><td>68.50</td></tr>
+<tr class="ours"><th scope="row">DSSP · full model</th><td>71.33</td></tr></tbody></table></div>
+<p class="result-note">These studies use a six-task subset and should not be compared directly with the 50-task RoboTwin average. Encoding measurements refer to the history encoder, not end-to-end policy latency.</p></div>
+<p class="source-note">Results follow the manuscript. See its Tables 1–6 for protocols, additional baselines, and the complete evaluation.</p></div></section>
+<section class="section" id="demo">
+<div class="page-container">
+<div class="section-intro">
+<p class="section-kicker">SEE DSSP IN ACTION</p>
+<h2>From remembered context to robot actions.</h2>
+<p>Watch the project demonstration.</p></div>
+<div class="video-frame"><video id="dssp-demo" controls playsinline preload="none" poster="static/images/dssp-demo-poster.jpg" aria-label="DSSP project demonstration"><source src="static/videos/dssp-demo.mp4" type="video/mp4">Your browser does not support embedded video. <a href="static/videos/dssp-demo.mp4">Open the demonstration video.</a></video></div>
+<div class="video-caption"><span>PROJECT DEMONSTRATION</span><a href="static/videos/dssp-demo.mp4" download>Download video ↓</a></div></div></section>
+<section class="section citation-section" id="bibtex">
+<div class="reading-container">
+<div class="citation-heading">
+<div>
+<p class="section-kicker">CITATION</p>
+<h2>Build on this work.</h2></div>
+<button class="copy-bibtex-btn" type="button" aria-label="Copy BibTeX citation">Copy BibTeX</button></div>
+<pre><code id="bibtex-code">@inproceedings{guan2026dssp,
+  title={DSSP: Diffusion State Space Policy with Full-History Encoding},
+  author={Zhiyuan Guan and Jianshu Hu and Han Fang and Yunpeng Jiang and Yize Huang and Shujia Li and Xiao Li and Yutong Ban},
+  booktitle={Advances in Neural Information Processing Systems},
+  year={2026},
+  eprint={2605.14598},
+  archivePrefix={arXiv},
+  primaryClass={cs.RO},
+  doi={10.48550/arXiv.2605.14598},
+  url={https://arxiv.org/abs/2605.14598}
 }</code></pre>
-    </div>
-</section>
-<!--End BibTex citation -->
-
-
-  <footer class="footer">
-  <div class="container">
-    <div class="columns is-centered">
-      <div class="column is-8">
-        <div class="content">
-
-          <p>
-            This page was built using the <a href="https://github.com/eliahuhorwitz/Academic-project-page-template" target="_blank">Academic Project Page Template</a> which was adopted from the <a href="https://nerfies.github.io" target="_blank">Nerfies</a> project page.
-            You are free to borrow the source code of this website, we just ask that you link back to this page in the footer. <br> This website is licensed under a <a rel="license"  href="http://creativecommons.org/licenses/by-sa/4.0/" target="_blank">Creative
-            Commons Attribution-ShareAlike 4.0 International License</a>.
-          </p>
-
-        </div>
-      </div>
-    </div>
-  </div>
-</footer>
-
-<!-- Statcounter tracking code -->
-  
-<!-- You can add a tracker to track page visits by creating an account at statcounter.com -->
-
-    <!-- End of Statcounter Code -->
-
-  </body>
-  </html>
+<p id="copy-status" class="copy-status" role="status" aria-live="polite"></p></div></section>
+</main>
+<footer class="footer">
+<div class="page-container footer-inner"><a class="footer-brand" href="#top">DSSP<span>Diffusion State Space Policy</span></a>
+<p>Built with the <a href="https://github.com/eliahuhorwitz/Academic-project-page-template" target="_blank" rel="noopener noreferrer">Academic Project Page Template</a>, adapted from <a href="https://nerfies.github.io/" target="_blank" rel="noopener noreferrer">Nerfies</a>.<br>Website template licensed under <a href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank" rel="noopener noreferrer">CC BY-SA 4.0</a>.</p></div></footer>
+<button class="scroll-to-top" type="button" aria-label="Scroll to top">↑</button>
+</body></html>
