@@ -3,6 +3,7 @@
 Project page for **DSSP: Diffusion State Space Policy with Full-History Encoding**.
 
 - arXiv: https://arxiv.org/abs/2605.14598
+- Code: https://github.com/yuaniw/DSSP/
 - Run locally: execute the following command from the repository root, then visit http://127.0.0.1:8000.
 
     python3 -m http.server 8000 --bind 127.0.0.1
@@ -19,7 +20,7 @@ Project page for **DSSP: Diffusion State Space Policy with Full-History Encoding
 
 - Title, author order, abstract and arXiv citation metadata were verified against arXiv:2605.14598. Affiliations and experimental numbers follow the provided local manuscript.
 - The publication venue is NeurIPS 2026, as confirmed by the user. The header, academic citation metadata, structured data and BibTeX identify the conference. The arXiv links remain available; no unprovided proceedings volume, page range or proceedings DOI is invented.
-- No code repository URL was provided, so no placeholder code link is shown. Verified GitHub Pages homepages are linked for Jianshu Hu, Yunpeng Jiang and Xiao Li; Yutong Ban links to the user-supplied SIRIUS Lab profile; see AUTHOR_LINKS.md for sources and the remaining authors.
+- The official implementation at https://github.com/yuaniw/DSSP/ is featured in the hero, navigation and an open-source section with installation and training/evaluation documentation links. Verified GitHub Pages homepages are linked for Jianshu Hu, Yunpeng Jiang and Xiao Li; Yutong Ban links to the user-supplied SIRIUS Lab profile; see AUTHOR_LINKS.md for sources and the remaining authors.
 - The original teaser's DP bar reports 34.5, while manuscript Table 1 reports DP 28.04 and RDT 34.50. The served teaser is cropped to the qualitative comparison; numerical results are separately transcribed from the manuscript. The original PDF is preserved.
 - The method figure's transparent background is composited onto white for reliable rendering.
 - The 81.66-second original HEVC demo in figures/demo.mp4 is preserved. The served H.264/AAC version removes the first 3.5 seconds and runs for 78.16 seconds, with fast-start metadata (14,294,380 bytes). Video is loaded only when requested.

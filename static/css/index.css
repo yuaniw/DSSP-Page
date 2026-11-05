@@ -37,6 +37,33 @@ sup{font-size:.65em;vertical-align:super;margin-left:2px}
 .resource-button{display:inline-flex;align-items:center;gap:8px;padding:10px 18px;border:1px solid var(--line);border-radius:9px;background:white;color:var(--ink);font-size:13px;font-weight:650;transition:transform .2s}
 .resource-button:hover{transform:translateY(-2px);background:#f1f6ff}
 .resource-button.primary{color:white;background:var(--blue);border-color:var(--blue)}
+.github-mark{display:block;flex:none}
+.nav-repo{display:inline-flex;align-items:center;gap:7px;white-space:nowrap}
+.nav-repo .github-mark{width:15px;height:15px}
+.resource-button.code-button{background:var(--ink);border-color:var(--ink);color:#fff}
+.resource-button.code-button:hover{background:#293f60;border-color:#293f60;color:#fff}
+.resource-button.paper-button{color:var(--blue);border-color:#c6d6ee;background:#f6f9ff}
+.resource-button.paper-button:hover{background:#eaf1ff;border-color:#9db9e8}
+.publication-secondary-links{display:flex;justify-content:center;align-items:center;flex-wrap:wrap;gap:10px;margin-top:13px;font-size:11px;color:#9ba7b9}
+.publication-secondary-links a{color:var(--muted);text-underline-offset:3px}
+.publication-secondary-links a:hover{text-decoration:underline;color:var(--blue)}
+.code-section{padding-top:0;padding-bottom:64px}
+.repository-card{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));align-items:center;gap:46px;padding:40px;border:1px solid #dbe4f0;border-radius:18px;background:linear-gradient(120deg,#f4f8ff 0%,#fbfcff 70%)}
+.repository-copy h2{font-size:32px;margin-bottom:16px}
+.repository-description{max-width:440px;font-size:14px;line-height:1.85;color:var(--muted);margin-bottom:22px}
+.repository-details{min-width:0}
+.repository-terminal{border:1px solid #2e415e;border-radius:12px;overflow:hidden;background:#17263d}
+.terminal-heading{display:flex;align-items:center;gap:18px;border-bottom:1px solid #ffffff15;padding:13px 16px;font-size:11px;letter-spacing:.2px;color:#c7d3e6}
+.terminal-dots{display:flex;gap:5px}
+.terminal-dots i{display:block;width:6px;height:6px;border-radius:50%;background:#6c7f99}
+.repository-terminal pre{margin:0;border:0;border-radius:0;padding:22px 17px;background:transparent;color:#eff5ff;font-size:11px;line-height:2;letter-spacing:-.1px;overflow-x:auto}
+.repository-terminal code{color:inherit;background:transparent}
+.terminal-prompt{color:#91b0e9;user-select:none}
+.repository-start{margin:17px 0 8px;font-size:11px;color:var(--muted)}
+.repository-doc-links{display:flex;flex-wrap:wrap;gap:9px 20px}
+.repository-doc-links a{display:inline-flex;align-items:center;gap:10px;font-size:11px;font-weight:600;text-underline-offset:4px}
+.repository-doc-links a:hover{text-decoration:underline}
+
 .page-container{max-width:1152px;margin:auto;padding:0 28px}
 .reading-container{max-width:870px;margin:auto;padding:0 28px}
 .section{padding:80px 0}
@@ -187,3 +214,6 @@ pre{font-size:10px;padding:15px}
 *,*::before,*::after{transition:none!important;animation:none!important}
 }
 
+
+@media(max-width:900px){.repository-card{gap:25px;padding:30px}.repository-terminal pre{font-size:10px}.repository-copy h2{font-size:29px}}
+@media(max-width:640px){.code-section{padding-top:0;padding-bottom:44px}.repository-card{grid-template-columns:minmax(0,1fr);gap:25px;padding:24px 20px;border-radius:13px}.repository-copy h2{font-size:27px}.repository-description{font-size:13px;margin-bottom:18px}.repository-terminal pre{font-size:10px;padding:18px 13px}.publication-secondary-links{font-size:10px;gap:9px}.publication-links .resource-button{padding:10px 13px}.publication-links .github-mark{width:16px;height:16px}.repository-doc-links{gap:10px 16px}}
